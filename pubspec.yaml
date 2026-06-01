@@ -28,6 +28,9 @@ dependencies:
   # formatted strings for dates etc
   intl: ^0.20.2
 
+  # dependency injection
+  get_it: ^9.2.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
