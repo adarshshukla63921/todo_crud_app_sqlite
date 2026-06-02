@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class TabPage extends StatelessWidget {
-  const TabPage({
-    super.key,
-    required this.navigationShell,
-  });
+  const TabPage({super.key, required this.navigationShell});
 
   final StatefulNavigationShell navigationShell;
 
