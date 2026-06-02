@@ -4,12 +4,12 @@ import 'package:todo_crud_app_sqlite/core/navigation/app_routes.dart';
 import 'package:todo_crud_app_sqlite/feature/note/note_list_page.dart';
 import 'package:todo_crud_app_sqlite/feature/settings/settings_page.dart';
 import 'package:todo_crud_app_sqlite/feature/tab/tab_page.dart';
-import 'package:todo_crud_app_sqlite/feature/todo/todo_list_page.dart';
+import 'package:todo_crud_app_sqlite/feature/todo/presentation/todo_list_page.dart';
 
 import '../../feature/note/note_add_page.dart';
 import '../../feature/note/note_edit_page.dart';
-import '../../feature/todo/todo_add_page.dart';
-import '../../feature/todo/todo_edit_page.dart';
+import '../../feature/todo/presentation/todo_add_page.dart';
+import '../../feature/todo/presentation/todo_edit_page.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
 final _todoTabKey = GlobalKey<NavigatorState>(debugLabel: 'todoTab');
