@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'core/di/injection_container.dart';
+import 'core/di/injection.dart';
 import 'core/navigation/app_router.dart';
 
 void main() async {

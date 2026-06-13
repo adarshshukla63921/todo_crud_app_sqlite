@@ -5,7 +5,7 @@ import '../../domain/entity/priority.dart';
 import '../../domain/entity/todo_entity.dart';
 import '../../domain/repository/todo_repository.dart';
 
-class TodoRepositoryImpl implements TodoRepository{
+class TodoRepositoryImpl implements TodoRepository {
   final TodoDataSource todoDataSource;
   const TodoRepositoryImpl({required this.todoDataSource});
 

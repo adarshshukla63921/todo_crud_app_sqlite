@@ -5,7 +5,6 @@ import 'package:todo_crud_app_sqlite/feature/todo/data/model/todo_model.dart';
 import '../../domain/entity/priority.dart';
 
 abstract class TodoDataSource {
-  
   /// CRUD
 
   Future<void> createTodo(TodoModel todo);
@@ -95,7 +94,9 @@ class TodoDataSourceImpl implements TodoDataSource {
   @override
   Future<List<TodoModel>> getAllTodos() async {
     final db = await _dbHelper.database;
-    final List<Map<String, dynamic>> maps = await db.query(DatabaseConstants.todoTable);
+    final List<Map<String, dynamic>> maps = await db.query(
+      DatabaseConstants.todoTable,
+    );
     return maps.map((map) => TodoModel.fromMap(map)).toList();
   }
 
@@ -180,7 +181,9 @@ class TodoDataSourceImpl implements TodoDataSource {
   Future<int> getCompletedCount() async {
     final db = await _dbHelper.database;
     final count = Sqflite.firstIntValue(
-      await db.rawQuery('SELECT COUNT(*) FROM ${DatabaseConstants.todoTable} WHERE isCompleted = 1'),
+      await db.rawQuery(
+        'SELECT COUNT(*) FROM ${DatabaseConstants.todoTable} WHERE isCompleted = 1',
+      ),
     );
     return count ?? 0;
   }
@@ -189,7 +192,9 @@ class TodoDataSourceImpl implements TodoDataSource {
   Future<int> getPendingCount() async {
     final db = await _dbHelper.database;
     final count = Sqflite.firstIntValue(
-      await db.rawQuery('SELECT COUNT(*) FROM ${DatabaseConstants.todoTable} WHERE isCompleted = 0'),
+      await db.rawQuery(
+        'SELECT COUNT(*) FROM ${DatabaseConstants.todoTable} WHERE isCompleted = 0',
+      ),
     );
     return count ?? 0;
   }
@@ -210,9 +215,13 @@ class TodoDataSourceImpl implements TodoDataSource {
   @override
   Future<double> getCompletionRate() async {
     final db = await _dbHelper.database;
-    final totalCount = Sqflite.firstIntValue(
-      await db.rawQuery('SELECT COUNT(*) FROM ${DatabaseConstants.todoTable}'),
-    ) ?? 0;
+    final totalCount =
+        Sqflite.firstIntValue(
+          await db.rawQuery(
+            'SELECT COUNT(*) FROM ${DatabaseConstants.todoTable}',
+          ),
+        ) ??
+        0;
     if (totalCount == 0) return 0.0;
 
     final completed = await getCompletedCount();
