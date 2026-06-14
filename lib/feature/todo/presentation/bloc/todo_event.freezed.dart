@@ -55,23 +55,23 @@ extension TodoEventPatterns on TodoEvent {
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( _Create value)?  create,TResult Function( _Update value)?  update,TResult Function( _DeleteById value)?  deleteById,TResult Function( _DeleteAll value)?  deleteAll,TResult Function( _GetById value)?  getById,TResult Function( _GetAll value)?  getAll,TResult Function( _GetCompleted value)?  getCompleted,TResult Function( _GetPinned value)?  getPinned,TResult Function( _GetByPriority value)?  getByPriority,TResult Function( _GetByCategory value)?  getByCategory,TResult Function( _Search value)?  search,TResult Function( _MarkCompleted value)?  markCompleted,TResult Function( _MarkPending value)?  markPending,TResult Function( _GetStats value)?  getStats,required TResult orElse(),}){
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>({TResult Function( Create value)?  create,TResult Function( Update value)?  update,TResult Function( DeleteById value)?  deleteById,TResult Function( DeleteAll value)?  deleteAll,TResult Function( GetById value)?  getById,TResult Function( GetAll value)?  getAll,TResult Function( GetCompleted value)?  getCompleted,TResult Function( GetPinned value)?  getPinned,TResult Function( GetByPriority value)?  getByPriority,TResult Function( GetByCategory value)?  getByCategory,TResult Function( Search value)?  search,TResult Function( MarkCompleted value)?  markCompleted,TResult Function( MarkPending value)?  markPending,TResult Function( GetStats value)?  getStats,required TResult orElse(),}){
 final _that = this;
 switch (_that) {
-case _Create() when create != null:
-return create(_that);case _Update() when update != null:
-return update(_that);case _DeleteById() when deleteById != null:
-return deleteById(_that);case _DeleteAll() when deleteAll != null:
-return deleteAll(_that);case _GetById() when getById != null:
-return getById(_that);case _GetAll() when getAll != null:
-return getAll(_that);case _GetCompleted() when getCompleted != null:
-return getCompleted(_that);case _GetPinned() when getPinned != null:
-return getPinned(_that);case _GetByPriority() when getByPriority != null:
-return getByPriority(_that);case _GetByCategory() when getByCategory != null:
-return getByCategory(_that);case _Search() when search != null:
-return search(_that);case _MarkCompleted() when markCompleted != null:
-return markCompleted(_that);case _MarkPending() when markPending != null:
-return markPending(_that);case _GetStats() when getStats != null:
+case Create() when create != null:
+return create(_that);case Update() when update != null:
+return update(_that);case DeleteById() when deleteById != null:
+return deleteById(_that);case DeleteAll() when deleteAll != null:
+return deleteAll(_that);case GetById() when getById != null:
+return getById(_that);case GetAll() when getAll != null:
+return getAll(_that);case GetCompleted() when getCompleted != null:
+return getCompleted(_that);case GetPinned() when getPinned != null:
+return getPinned(_that);case GetByPriority() when getByPriority != null:
+return getByPriority(_that);case GetByCategory() when getByCategory != null:
+return getByCategory(_that);case Search() when search != null:
+return search(_that);case MarkCompleted() when markCompleted != null:
+return markCompleted(_that);case MarkPending() when markPending != null:
+return markPending(_that);case GetStats() when getStats != null:
 return getStats(_that);case _:
   return orElse();
 
@@ -90,23 +90,23 @@ return getStats(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( _Create value)  create,required TResult Function( _Update value)  update,required TResult Function( _DeleteById value)  deleteById,required TResult Function( _DeleteAll value)  deleteAll,required TResult Function( _GetById value)  getById,required TResult Function( _GetAll value)  getAll,required TResult Function( _GetCompleted value)  getCompleted,required TResult Function( _GetPinned value)  getPinned,required TResult Function( _GetByPriority value)  getByPriority,required TResult Function( _GetByCategory value)  getByCategory,required TResult Function( _Search value)  search,required TResult Function( _MarkCompleted value)  markCompleted,required TResult Function( _MarkPending value)  markPending,required TResult Function( _GetStats value)  getStats,}){
+@optionalTypeArgs TResult map<TResult extends Object?>({required TResult Function( Create value)  create,required TResult Function( Update value)  update,required TResult Function( DeleteById value)  deleteById,required TResult Function( DeleteAll value)  deleteAll,required TResult Function( GetById value)  getById,required TResult Function( GetAll value)  getAll,required TResult Function( GetCompleted value)  getCompleted,required TResult Function( GetPinned value)  getPinned,required TResult Function( GetByPriority value)  getByPriority,required TResult Function( GetByCategory value)  getByCategory,required TResult Function( Search value)  search,required TResult Function( MarkCompleted value)  markCompleted,required TResult Function( MarkPending value)  markPending,required TResult Function( GetStats value)  getStats,}){
 final _that = this;
 switch (_that) {
-case _Create():
-return create(_that);case _Update():
-return update(_that);case _DeleteById():
-return deleteById(_that);case _DeleteAll():
-return deleteAll(_that);case _GetById():
-return getById(_that);case _GetAll():
-return getAll(_that);case _GetCompleted():
-return getCompleted(_that);case _GetPinned():
-return getPinned(_that);case _GetByPriority():
-return getByPriority(_that);case _GetByCategory():
-return getByCategory(_that);case _Search():
-return search(_that);case _MarkCompleted():
-return markCompleted(_that);case _MarkPending():
-return markPending(_that);case _GetStats():
+case Create():
+return create(_that);case Update():
+return update(_that);case DeleteById():
+return deleteById(_that);case DeleteAll():
+return deleteAll(_that);case GetById():
+return getById(_that);case GetAll():
+return getAll(_that);case GetCompleted():
+return getCompleted(_that);case GetPinned():
+return getPinned(_that);case GetByPriority():
+return getByPriority(_that);case GetByCategory():
+return getByCategory(_that);case Search():
+return search(_that);case MarkCompleted():
+return markCompleted(_that);case MarkPending():
+return markPending(_that);case GetStats():
 return getStats(_that);case _:
   throw StateError('Unexpected subclass');
 
@@ -124,23 +124,23 @@ return getStats(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( _Create value)?  create,TResult? Function( _Update value)?  update,TResult? Function( _DeleteById value)?  deleteById,TResult? Function( _DeleteAll value)?  deleteAll,TResult? Function( _GetById value)?  getById,TResult? Function( _GetAll value)?  getAll,TResult? Function( _GetCompleted value)?  getCompleted,TResult? Function( _GetPinned value)?  getPinned,TResult? Function( _GetByPriority value)?  getByPriority,TResult? Function( _GetByCategory value)?  getByCategory,TResult? Function( _Search value)?  search,TResult? Function( _MarkCompleted value)?  markCompleted,TResult? Function( _MarkPending value)?  markPending,TResult? Function( _GetStats value)?  getStats,}){
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>({TResult? Function( Create value)?  create,TResult? Function( Update value)?  update,TResult? Function( DeleteById value)?  deleteById,TResult? Function( DeleteAll value)?  deleteAll,TResult? Function( GetById value)?  getById,TResult? Function( GetAll value)?  getAll,TResult? Function( GetCompleted value)?  getCompleted,TResult? Function( GetPinned value)?  getPinned,TResult? Function( GetByPriority value)?  getByPriority,TResult? Function( GetByCategory value)?  getByCategory,TResult? Function( Search value)?  search,TResult? Function( MarkCompleted value)?  markCompleted,TResult? Function( MarkPending value)?  markPending,TResult? Function( GetStats value)?  getStats,}){
 final _that = this;
 switch (_that) {
-case _Create() when create != null:
-return create(_that);case _Update() when update != null:
-return update(_that);case _DeleteById() when deleteById != null:
-return deleteById(_that);case _DeleteAll() when deleteAll != null:
-return deleteAll(_that);case _GetById() when getById != null:
-return getById(_that);case _GetAll() when getAll != null:
-return getAll(_that);case _GetCompleted() when getCompleted != null:
-return getCompleted(_that);case _GetPinned() when getPinned != null:
-return getPinned(_that);case _GetByPriority() when getByPriority != null:
-return getByPriority(_that);case _GetByCategory() when getByCategory != null:
-return getByCategory(_that);case _Search() when search != null:
-return search(_that);case _MarkCompleted() when markCompleted != null:
-return markCompleted(_that);case _MarkPending() when markPending != null:
-return markPending(_that);case _GetStats() when getStats != null:
+case Create() when create != null:
+return create(_that);case Update() when update != null:
+return update(_that);case DeleteById() when deleteById != null:
+return deleteById(_that);case DeleteAll() when deleteAll != null:
+return deleteAll(_that);case GetById() when getById != null:
+return getById(_that);case GetAll() when getAll != null:
+return getAll(_that);case GetCompleted() when getCompleted != null:
+return getCompleted(_that);case GetPinned() when getPinned != null:
+return getPinned(_that);case GetByPriority() when getByPriority != null:
+return getByPriority(_that);case GetByCategory() when getByCategory != null:
+return getByCategory(_that);case Search() when search != null:
+return search(_that);case MarkCompleted() when markCompleted != null:
+return markCompleted(_that);case MarkPending() when markPending != null:
+return markPending(_that);case GetStats() when getStats != null:
 return getStats(_that);case _:
   return null;
 
@@ -160,20 +160,20 @@ return getStats(_that);case _:
 
 @optionalTypeArgs TResult maybeWhen<TResult extends Object?>({TResult Function( TodoEntity todo)?  create,TResult Function( TodoEntity todo)?  update,TResult Function( int id)?  deleteById,TResult Function()?  deleteAll,TResult Function( int id)?  getById,TResult Function()?  getAll,TResult Function()?  getCompleted,TResult Function()?  getPinned,TResult Function( Priority priority)?  getByPriority,TResult Function( String categoryId)?  getByCategory,TResult Function( String query)?  search,TResult Function( int id)?  markCompleted,TResult Function( int id)?  markPending,TResult Function()?  getStats,required TResult orElse(),}) {final _that = this;
 switch (_that) {
-case _Create() when create != null:
-return create(_that.todo);case _Update() when update != null:
-return update(_that.todo);case _DeleteById() when deleteById != null:
-return deleteById(_that.id);case _DeleteAll() when deleteAll != null:
-return deleteAll();case _GetById() when getById != null:
-return getById(_that.id);case _GetAll() when getAll != null:
-return getAll();case _GetCompleted() when getCompleted != null:
-return getCompleted();case _GetPinned() when getPinned != null:
-return getPinned();case _GetByPriority() when getByPriority != null:
-return getByPriority(_that.priority);case _GetByCategory() when getByCategory != null:
-return getByCategory(_that.categoryId);case _Search() when search != null:
-return search(_that.query);case _MarkCompleted() when markCompleted != null:
-return markCompleted(_that.id);case _MarkPending() when markPending != null:
-return markPending(_that.id);case _GetStats() when getStats != null:
+case Create() when create != null:
+return create(_that.todo);case Update() when update != null:
+return update(_that.todo);case DeleteById() when deleteById != null:
+return deleteById(_that.id);case DeleteAll() when deleteAll != null:
+return deleteAll();case GetById() when getById != null:
+return getById(_that.id);case GetAll() when getAll != null:
+return getAll();case GetCompleted() when getCompleted != null:
+return getCompleted();case GetPinned() when getPinned != null:
+return getPinned();case GetByPriority() when getByPriority != null:
+return getByPriority(_that.priority);case GetByCategory() when getByCategory != null:
+return getByCategory(_that.categoryId);case Search() when search != null:
+return search(_that.query);case MarkCompleted() when markCompleted != null:
+return markCompleted(_that.id);case MarkPending() when markPending != null:
+return markPending(_that.id);case GetStats() when getStats != null:
 return getStats();case _:
   return orElse();
 
@@ -194,20 +194,20 @@ return getStats();case _:
 
 @optionalTypeArgs TResult when<TResult extends Object?>({required TResult Function( TodoEntity todo)  create,required TResult Function( TodoEntity todo)  update,required TResult Function( int id)  deleteById,required TResult Function()  deleteAll,required TResult Function( int id)  getById,required TResult Function()  getAll,required TResult Function()  getCompleted,required TResult Function()  getPinned,required TResult Function( Priority priority)  getByPriority,required TResult Function( String categoryId)  getByCategory,required TResult Function( String query)  search,required TResult Function( int id)  markCompleted,required TResult Function( int id)  markPending,required TResult Function()  getStats,}) {final _that = this;
 switch (_that) {
-case _Create():
-return create(_that.todo);case _Update():
-return update(_that.todo);case _DeleteById():
-return deleteById(_that.id);case _DeleteAll():
-return deleteAll();case _GetById():
-return getById(_that.id);case _GetAll():
-return getAll();case _GetCompleted():
-return getCompleted();case _GetPinned():
-return getPinned();case _GetByPriority():
-return getByPriority(_that.priority);case _GetByCategory():
-return getByCategory(_that.categoryId);case _Search():
-return search(_that.query);case _MarkCompleted():
-return markCompleted(_that.id);case _MarkPending():
-return markPending(_that.id);case _GetStats():
+case Create():
+return create(_that.todo);case Update():
+return update(_that.todo);case DeleteById():
+return deleteById(_that.id);case DeleteAll():
+return deleteAll();case GetById():
+return getById(_that.id);case GetAll():
+return getAll();case GetCompleted():
+return getCompleted();case GetPinned():
+return getPinned();case GetByPriority():
+return getByPriority(_that.priority);case GetByCategory():
+return getByCategory(_that.categoryId);case Search():
+return search(_that.query);case MarkCompleted():
+return markCompleted(_that.id);case MarkPending():
+return markPending(_that.id);case GetStats():
 return getStats();case _:
   throw StateError('Unexpected subclass');
 
@@ -227,20 +227,20 @@ return getStats();case _:
 
 @optionalTypeArgs TResult? whenOrNull<TResult extends Object?>({TResult? Function( TodoEntity todo)?  create,TResult? Function( TodoEntity todo)?  update,TResult? Function( int id)?  deleteById,TResult? Function()?  deleteAll,TResult? Function( int id)?  getById,TResult? Function()?  getAll,TResult? Function()?  getCompleted,TResult? Function()?  getPinned,TResult? Function( Priority priority)?  getByPriority,TResult? Function( String categoryId)?  getByCategory,TResult? Function( String query)?  search,TResult? Function( int id)?  markCompleted,TResult? Function( int id)?  markPending,TResult? Function()?  getStats,}) {final _that = this;
 switch (_that) {
-case _Create() when create != null:
-return create(_that.todo);case _Update() when update != null:
-return update(_that.todo);case _DeleteById() when deleteById != null:
-return deleteById(_that.id);case _DeleteAll() when deleteAll != null:
-return deleteAll();case _GetById() when getById != null:
-return getById(_that.id);case _GetAll() when getAll != null:
-return getAll();case _GetCompleted() when getCompleted != null:
-return getCompleted();case _GetPinned() when getPinned != null:
-return getPinned();case _GetByPriority() when getByPriority != null:
-return getByPriority(_that.priority);case _GetByCategory() when getByCategory != null:
-return getByCategory(_that.categoryId);case _Search() when search != null:
-return search(_that.query);case _MarkCompleted() when markCompleted != null:
-return markCompleted(_that.id);case _MarkPending() when markPending != null:
-return markPending(_that.id);case _GetStats() when getStats != null:
+case Create() when create != null:
+return create(_that.todo);case Update() when update != null:
+return update(_that.todo);case DeleteById() when deleteById != null:
+return deleteById(_that.id);case DeleteAll() when deleteAll != null:
+return deleteAll();case GetById() when getById != null:
+return getById(_that.id);case GetAll() when getAll != null:
+return getAll();case GetCompleted() when getCompleted != null:
+return getCompleted();case GetPinned() when getPinned != null:
+return getPinned();case GetByPriority() when getByPriority != null:
+return getByPriority(_that.priority);case GetByCategory() when getByCategory != null:
+return getByCategory(_that.categoryId);case Search() when search != null:
+return search(_that.query);case MarkCompleted() when markCompleted != null:
+return markCompleted(_that.id);case MarkPending() when markPending != null:
+return markPending(_that.id);case GetStats() when getStats != null:
 return getStats();case _:
   return null;
 
@@ -252,8 +252,8 @@ return getStats();case _:
 /// @nodoc
 
 
-class _Create implements TodoEvent {
-  const _Create(this.todo);
+class Create implements TodoEvent {
+  const Create(this.todo);
   
 
  final  TodoEntity todo;
@@ -262,13 +262,13 @@ class _Create implements TodoEvent {
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
-_$CreateCopyWith<_Create> get copyWith => __$CreateCopyWithImpl<_Create>(this, _$identity);
+$CreateCopyWith<Create> get copyWith => _$CreateCopyWithImpl<Create>(this, _$identity);
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Create&&(identical(other.todo, todo) || other.todo == todo));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Create&&(identical(other.todo, todo) || other.todo == todo));
 }
 
 
@@ -284,8 +284,8 @@ String toString() {
 }
 
 /// @nodoc
-abstract mixin class _$CreateCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
-  factory _$CreateCopyWith(_Create value, $Res Function(_Create) _then) = __$CreateCopyWithImpl;
+abstract mixin class $CreateCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
+  factory $CreateCopyWith(Create value, $Res Function(Create) _then) = _$CreateCopyWithImpl;
 @useResult
 $Res call({
  TodoEntity todo
@@ -296,17 +296,17 @@ $Res call({
 
 }
 /// @nodoc
-class __$CreateCopyWithImpl<$Res>
-    implements _$CreateCopyWith<$Res> {
-  __$CreateCopyWithImpl(this._self, this._then);
+class _$CreateCopyWithImpl<$Res>
+    implements $CreateCopyWith<$Res> {
+  _$CreateCopyWithImpl(this._self, this._then);
 
-  final _Create _self;
-  final $Res Function(_Create) _then;
+  final Create _self;
+  final $Res Function(Create) _then;
 
 /// Create a copy of TodoEvent
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') $Res call({Object? todo = null,}) {
-  return _then(_Create(
+  return _then(Create(
 null == todo ? _self.todo : todo // ignore: cast_nullable_to_non_nullable
 as TodoEntity,
   ));
@@ -318,8 +318,8 @@ as TodoEntity,
 /// @nodoc
 
 
-class _Update implements TodoEvent {
-  const _Update(this.todo);
+class Update implements TodoEvent {
+  const Update(this.todo);
   
 
  final  TodoEntity todo;
@@ -328,13 +328,13 @@ class _Update implements TodoEvent {
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
-_$UpdateCopyWith<_Update> get copyWith => __$UpdateCopyWithImpl<_Update>(this, _$identity);
+$UpdateCopyWith<Update> get copyWith => _$UpdateCopyWithImpl<Update>(this, _$identity);
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Update&&(identical(other.todo, todo) || other.todo == todo));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Update&&(identical(other.todo, todo) || other.todo == todo));
 }
 
 
@@ -350,8 +350,8 @@ String toString() {
 }
 
 /// @nodoc
-abstract mixin class _$UpdateCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
-  factory _$UpdateCopyWith(_Update value, $Res Function(_Update) _then) = __$UpdateCopyWithImpl;
+abstract mixin class $UpdateCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
+  factory $UpdateCopyWith(Update value, $Res Function(Update) _then) = _$UpdateCopyWithImpl;
 @useResult
 $Res call({
  TodoEntity todo
@@ -362,17 +362,17 @@ $Res call({
 
 }
 /// @nodoc
-class __$UpdateCopyWithImpl<$Res>
-    implements _$UpdateCopyWith<$Res> {
-  __$UpdateCopyWithImpl(this._self, this._then);
+class _$UpdateCopyWithImpl<$Res>
+    implements $UpdateCopyWith<$Res> {
+  _$UpdateCopyWithImpl(this._self, this._then);
 
-  final _Update _self;
-  final $Res Function(_Update) _then;
+  final Update _self;
+  final $Res Function(Update) _then;
 
 /// Create a copy of TodoEvent
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') $Res call({Object? todo = null,}) {
-  return _then(_Update(
+  return _then(Update(
 null == todo ? _self.todo : todo // ignore: cast_nullable_to_non_nullable
 as TodoEntity,
   ));
@@ -384,8 +384,8 @@ as TodoEntity,
 /// @nodoc
 
 
-class _DeleteById implements TodoEvent {
-  const _DeleteById(this.id);
+class DeleteById implements TodoEvent {
+  const DeleteById(this.id);
   
 
  final  int id;
@@ -394,13 +394,13 @@ class _DeleteById implements TodoEvent {
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
-_$DeleteByIdCopyWith<_DeleteById> get copyWith => __$DeleteByIdCopyWithImpl<_DeleteById>(this, _$identity);
+$DeleteByIdCopyWith<DeleteById> get copyWith => _$DeleteByIdCopyWithImpl<DeleteById>(this, _$identity);
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _DeleteById&&(identical(other.id, id) || other.id == id));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is DeleteById&&(identical(other.id, id) || other.id == id));
 }
 
 
@@ -416,8 +416,8 @@ String toString() {
 }
 
 /// @nodoc
-abstract mixin class _$DeleteByIdCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
-  factory _$DeleteByIdCopyWith(_DeleteById value, $Res Function(_DeleteById) _then) = __$DeleteByIdCopyWithImpl;
+abstract mixin class $DeleteByIdCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
+  factory $DeleteByIdCopyWith(DeleteById value, $Res Function(DeleteById) _then) = _$DeleteByIdCopyWithImpl;
 @useResult
 $Res call({
  int id
@@ -428,17 +428,17 @@ $Res call({
 
 }
 /// @nodoc
-class __$DeleteByIdCopyWithImpl<$Res>
-    implements _$DeleteByIdCopyWith<$Res> {
-  __$DeleteByIdCopyWithImpl(this._self, this._then);
+class _$DeleteByIdCopyWithImpl<$Res>
+    implements $DeleteByIdCopyWith<$Res> {
+  _$DeleteByIdCopyWithImpl(this._self, this._then);
 
-  final _DeleteById _self;
-  final $Res Function(_DeleteById) _then;
+  final DeleteById _self;
+  final $Res Function(DeleteById) _then;
 
 /// Create a copy of TodoEvent
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') $Res call({Object? id = null,}) {
-  return _then(_DeleteById(
+  return _then(DeleteById(
 null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as int,
   ));
@@ -450,8 +450,8 @@ as int,
 /// @nodoc
 
 
-class _DeleteAll implements TodoEvent {
-  const _DeleteAll();
+class DeleteAll implements TodoEvent {
+  const DeleteAll();
   
 
 
@@ -461,7 +461,7 @@ class _DeleteAll implements TodoEvent {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _DeleteAll);
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is DeleteAll);
 }
 
 
@@ -482,8 +482,8 @@ String toString() {
 /// @nodoc
 
 
-class _GetById implements TodoEvent {
-  const _GetById(this.id);
+class GetById implements TodoEvent {
+  const GetById(this.id);
   
 
  final  int id;
@@ -492,13 +492,13 @@ class _GetById implements TodoEvent {
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
-_$GetByIdCopyWith<_GetById> get copyWith => __$GetByIdCopyWithImpl<_GetById>(this, _$identity);
+$GetByIdCopyWith<GetById> get copyWith => _$GetByIdCopyWithImpl<GetById>(this, _$identity);
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _GetById&&(identical(other.id, id) || other.id == id));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is GetById&&(identical(other.id, id) || other.id == id));
 }
 
 
@@ -514,8 +514,8 @@ String toString() {
 }
 
 /// @nodoc
-abstract mixin class _$GetByIdCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
-  factory _$GetByIdCopyWith(_GetById value, $Res Function(_GetById) _then) = __$GetByIdCopyWithImpl;
+abstract mixin class $GetByIdCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
+  factory $GetByIdCopyWith(GetById value, $Res Function(GetById) _then) = _$GetByIdCopyWithImpl;
 @useResult
 $Res call({
  int id
@@ -526,17 +526,17 @@ $Res call({
 
 }
 /// @nodoc
-class __$GetByIdCopyWithImpl<$Res>
-    implements _$GetByIdCopyWith<$Res> {
-  __$GetByIdCopyWithImpl(this._self, this._then);
+class _$GetByIdCopyWithImpl<$Res>
+    implements $GetByIdCopyWith<$Res> {
+  _$GetByIdCopyWithImpl(this._self, this._then);
 
-  final _GetById _self;
-  final $Res Function(_GetById) _then;
+  final GetById _self;
+  final $Res Function(GetById) _then;
 
 /// Create a copy of TodoEvent
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') $Res call({Object? id = null,}) {
-  return _then(_GetById(
+  return _then(GetById(
 null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as int,
   ));
@@ -548,8 +548,8 @@ as int,
 /// @nodoc
 
 
-class _GetAll implements TodoEvent {
-  const _GetAll();
+class GetAll implements TodoEvent {
+  const GetAll();
   
 
 
@@ -559,7 +559,7 @@ class _GetAll implements TodoEvent {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _GetAll);
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is GetAll);
 }
 
 
@@ -580,8 +580,8 @@ String toString() {
 /// @nodoc
 
 
-class _GetCompleted implements TodoEvent {
-  const _GetCompleted();
+class GetCompleted implements TodoEvent {
+  const GetCompleted();
   
 
 
@@ -591,7 +591,7 @@ class _GetCompleted implements TodoEvent {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _GetCompleted);
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is GetCompleted);
 }
 
 
@@ -612,8 +612,8 @@ String toString() {
 /// @nodoc
 
 
-class _GetPinned implements TodoEvent {
-  const _GetPinned();
+class GetPinned implements TodoEvent {
+  const GetPinned();
   
 
 
@@ -623,7 +623,7 @@ class _GetPinned implements TodoEvent {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _GetPinned);
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is GetPinned);
 }
 
 
@@ -644,8 +644,8 @@ String toString() {
 /// @nodoc
 
 
-class _GetByPriority implements TodoEvent {
-  const _GetByPriority(this.priority);
+class GetByPriority implements TodoEvent {
+  const GetByPriority(this.priority);
   
 
  final  Priority priority;
@@ -654,13 +654,13 @@ class _GetByPriority implements TodoEvent {
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
-_$GetByPriorityCopyWith<_GetByPriority> get copyWith => __$GetByPriorityCopyWithImpl<_GetByPriority>(this, _$identity);
+$GetByPriorityCopyWith<GetByPriority> get copyWith => _$GetByPriorityCopyWithImpl<GetByPriority>(this, _$identity);
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _GetByPriority&&(identical(other.priority, priority) || other.priority == priority));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is GetByPriority&&(identical(other.priority, priority) || other.priority == priority));
 }
 
 
@@ -676,8 +676,8 @@ String toString() {
 }
 
 /// @nodoc
-abstract mixin class _$GetByPriorityCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
-  factory _$GetByPriorityCopyWith(_GetByPriority value, $Res Function(_GetByPriority) _then) = __$GetByPriorityCopyWithImpl;
+abstract mixin class $GetByPriorityCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
+  factory $GetByPriorityCopyWith(GetByPriority value, $Res Function(GetByPriority) _then) = _$GetByPriorityCopyWithImpl;
 @useResult
 $Res call({
  Priority priority
@@ -688,17 +688,17 @@ $Res call({
 
 }
 /// @nodoc
-class __$GetByPriorityCopyWithImpl<$Res>
-    implements _$GetByPriorityCopyWith<$Res> {
-  __$GetByPriorityCopyWithImpl(this._self, this._then);
+class _$GetByPriorityCopyWithImpl<$Res>
+    implements $GetByPriorityCopyWith<$Res> {
+  _$GetByPriorityCopyWithImpl(this._self, this._then);
 
-  final _GetByPriority _self;
-  final $Res Function(_GetByPriority) _then;
+  final GetByPriority _self;
+  final $Res Function(GetByPriority) _then;
 
 /// Create a copy of TodoEvent
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') $Res call({Object? priority = null,}) {
-  return _then(_GetByPriority(
+  return _then(GetByPriority(
 null == priority ? _self.priority : priority // ignore: cast_nullable_to_non_nullable
 as Priority,
   ));
@@ -710,8 +710,8 @@ as Priority,
 /// @nodoc
 
 
-class _GetByCategory implements TodoEvent {
-  const _GetByCategory(this.categoryId);
+class GetByCategory implements TodoEvent {
+  const GetByCategory(this.categoryId);
   
 
  final  String categoryId;
@@ -720,13 +720,13 @@ class _GetByCategory implements TodoEvent {
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
-_$GetByCategoryCopyWith<_GetByCategory> get copyWith => __$GetByCategoryCopyWithImpl<_GetByCategory>(this, _$identity);
+$GetByCategoryCopyWith<GetByCategory> get copyWith => _$GetByCategoryCopyWithImpl<GetByCategory>(this, _$identity);
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _GetByCategory&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is GetByCategory&&(identical(other.categoryId, categoryId) || other.categoryId == categoryId));
 }
 
 
@@ -742,8 +742,8 @@ String toString() {
 }
 
 /// @nodoc
-abstract mixin class _$GetByCategoryCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
-  factory _$GetByCategoryCopyWith(_GetByCategory value, $Res Function(_GetByCategory) _then) = __$GetByCategoryCopyWithImpl;
+abstract mixin class $GetByCategoryCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
+  factory $GetByCategoryCopyWith(GetByCategory value, $Res Function(GetByCategory) _then) = _$GetByCategoryCopyWithImpl;
 @useResult
 $Res call({
  String categoryId
@@ -754,17 +754,17 @@ $Res call({
 
 }
 /// @nodoc
-class __$GetByCategoryCopyWithImpl<$Res>
-    implements _$GetByCategoryCopyWith<$Res> {
-  __$GetByCategoryCopyWithImpl(this._self, this._then);
+class _$GetByCategoryCopyWithImpl<$Res>
+    implements $GetByCategoryCopyWith<$Res> {
+  _$GetByCategoryCopyWithImpl(this._self, this._then);
 
-  final _GetByCategory _self;
-  final $Res Function(_GetByCategory) _then;
+  final GetByCategory _self;
+  final $Res Function(GetByCategory) _then;
 
 /// Create a copy of TodoEvent
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') $Res call({Object? categoryId = null,}) {
-  return _then(_GetByCategory(
+  return _then(GetByCategory(
 null == categoryId ? _self.categoryId : categoryId // ignore: cast_nullable_to_non_nullable
 as String,
   ));
@@ -776,8 +776,8 @@ as String,
 /// @nodoc
 
 
-class _Search implements TodoEvent {
-  const _Search(this.query);
+class Search implements TodoEvent {
+  const Search(this.query);
   
 
  final  String query;
@@ -786,13 +786,13 @@ class _Search implements TodoEvent {
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
-_$SearchCopyWith<_Search> get copyWith => __$SearchCopyWithImpl<_Search>(this, _$identity);
+$SearchCopyWith<Search> get copyWith => _$SearchCopyWithImpl<Search>(this, _$identity);
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Search&&(identical(other.query, query) || other.query == query));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Search&&(identical(other.query, query) || other.query == query));
 }
 
 
@@ -808,8 +808,8 @@ String toString() {
 }
 
 /// @nodoc
-abstract mixin class _$SearchCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
-  factory _$SearchCopyWith(_Search value, $Res Function(_Search) _then) = __$SearchCopyWithImpl;
+abstract mixin class $SearchCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
+  factory $SearchCopyWith(Search value, $Res Function(Search) _then) = _$SearchCopyWithImpl;
 @useResult
 $Res call({
  String query
@@ -820,17 +820,17 @@ $Res call({
 
 }
 /// @nodoc
-class __$SearchCopyWithImpl<$Res>
-    implements _$SearchCopyWith<$Res> {
-  __$SearchCopyWithImpl(this._self, this._then);
+class _$SearchCopyWithImpl<$Res>
+    implements $SearchCopyWith<$Res> {
+  _$SearchCopyWithImpl(this._self, this._then);
 
-  final _Search _self;
-  final $Res Function(_Search) _then;
+  final Search _self;
+  final $Res Function(Search) _then;
 
 /// Create a copy of TodoEvent
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') $Res call({Object? query = null,}) {
-  return _then(_Search(
+  return _then(Search(
 null == query ? _self.query : query // ignore: cast_nullable_to_non_nullable
 as String,
   ));
@@ -842,8 +842,8 @@ as String,
 /// @nodoc
 
 
-class _MarkCompleted implements TodoEvent {
-  const _MarkCompleted(this.id);
+class MarkCompleted implements TodoEvent {
+  const MarkCompleted(this.id);
   
 
  final  int id;
@@ -852,13 +852,13 @@ class _MarkCompleted implements TodoEvent {
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
-_$MarkCompletedCopyWith<_MarkCompleted> get copyWith => __$MarkCompletedCopyWithImpl<_MarkCompleted>(this, _$identity);
+$MarkCompletedCopyWith<MarkCompleted> get copyWith => _$MarkCompletedCopyWithImpl<MarkCompleted>(this, _$identity);
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _MarkCompleted&&(identical(other.id, id) || other.id == id));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is MarkCompleted&&(identical(other.id, id) || other.id == id));
 }
 
 
@@ -874,8 +874,8 @@ String toString() {
 }
 
 /// @nodoc
-abstract mixin class _$MarkCompletedCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
-  factory _$MarkCompletedCopyWith(_MarkCompleted value, $Res Function(_MarkCompleted) _then) = __$MarkCompletedCopyWithImpl;
+abstract mixin class $MarkCompletedCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
+  factory $MarkCompletedCopyWith(MarkCompleted value, $Res Function(MarkCompleted) _then) = _$MarkCompletedCopyWithImpl;
 @useResult
 $Res call({
  int id
@@ -886,17 +886,17 @@ $Res call({
 
 }
 /// @nodoc
-class __$MarkCompletedCopyWithImpl<$Res>
-    implements _$MarkCompletedCopyWith<$Res> {
-  __$MarkCompletedCopyWithImpl(this._self, this._then);
+class _$MarkCompletedCopyWithImpl<$Res>
+    implements $MarkCompletedCopyWith<$Res> {
+  _$MarkCompletedCopyWithImpl(this._self, this._then);
 
-  final _MarkCompleted _self;
-  final $Res Function(_MarkCompleted) _then;
+  final MarkCompleted _self;
+  final $Res Function(MarkCompleted) _then;
 
 /// Create a copy of TodoEvent
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') $Res call({Object? id = null,}) {
-  return _then(_MarkCompleted(
+  return _then(MarkCompleted(
 null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as int,
   ));
@@ -908,8 +908,8 @@ as int,
 /// @nodoc
 
 
-class _MarkPending implements TodoEvent {
-  const _MarkPending(this.id);
+class MarkPending implements TodoEvent {
+  const MarkPending(this.id);
   
 
  final  int id;
@@ -918,13 +918,13 @@ class _MarkPending implements TodoEvent {
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
 @pragma('vm:prefer-inline')
-_$MarkPendingCopyWith<_MarkPending> get copyWith => __$MarkPendingCopyWithImpl<_MarkPending>(this, _$identity);
+$MarkPendingCopyWith<MarkPending> get copyWith => _$MarkPendingCopyWithImpl<MarkPending>(this, _$identity);
 
 
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _MarkPending&&(identical(other.id, id) || other.id == id));
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is MarkPending&&(identical(other.id, id) || other.id == id));
 }
 
 
@@ -940,8 +940,8 @@ String toString() {
 }
 
 /// @nodoc
-abstract mixin class _$MarkPendingCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
-  factory _$MarkPendingCopyWith(_MarkPending value, $Res Function(_MarkPending) _then) = __$MarkPendingCopyWithImpl;
+abstract mixin class $MarkPendingCopyWith<$Res> implements $TodoEventCopyWith<$Res> {
+  factory $MarkPendingCopyWith(MarkPending value, $Res Function(MarkPending) _then) = _$MarkPendingCopyWithImpl;
 @useResult
 $Res call({
  int id
@@ -952,17 +952,17 @@ $Res call({
 
 }
 /// @nodoc
-class __$MarkPendingCopyWithImpl<$Res>
-    implements _$MarkPendingCopyWith<$Res> {
-  __$MarkPendingCopyWithImpl(this._self, this._then);
+class _$MarkPendingCopyWithImpl<$Res>
+    implements $MarkPendingCopyWith<$Res> {
+  _$MarkPendingCopyWithImpl(this._self, this._then);
 
-  final _MarkPending _self;
-  final $Res Function(_MarkPending) _then;
+  final MarkPending _self;
+  final $Res Function(MarkPending) _then;
 
 /// Create a copy of TodoEvent
 /// with the given fields replaced by the non-null parameter values.
 @pragma('vm:prefer-inline') $Res call({Object? id = null,}) {
-  return _then(_MarkPending(
+  return _then(MarkPending(
 null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
 as int,
   ));
@@ -974,8 +974,8 @@ as int,
 /// @nodoc
 
 
-class _GetStats implements TodoEvent {
-  const _GetStats();
+class GetStats implements TodoEvent {
+  const GetStats();
   
 
 
@@ -985,7 +985,7 @@ class _GetStats implements TodoEvent {
 
 @override
 bool operator ==(Object other) {
-  return identical(this, other) || (other.runtimeType == runtimeType&&other is _GetStats);
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is GetStats);
 }
 
 

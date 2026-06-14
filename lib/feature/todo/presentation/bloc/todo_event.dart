@@ -6,21 +6,21 @@ part 'todo_event.freezed.dart';
 
 @freezed
 class TodoEvent with _$TodoEvent {
-  const factory TodoEvent.create(TodoEntity todo) = _Create;
-  const factory TodoEvent.update(TodoEntity todo) = _Update;
-  const factory TodoEvent.deleteById(int id) = _DeleteById;
-  const factory TodoEvent.deleteAll() = _DeleteAll;
-  const factory TodoEvent.getById(int id) = _GetById;
-  const factory TodoEvent.getAll() = _GetAll;
+  const factory TodoEvent.create(TodoEntity todo) = Create;
+  const factory TodoEvent.update(TodoEntity todo) = Update;
+  const factory TodoEvent.deleteById(int id) = DeleteById;
+  const factory TodoEvent.deleteAll() = DeleteAll;
+  const factory TodoEvent.getById(int id) = GetById;
+  const factory TodoEvent.getAll() = GetAll;
 
-  const factory TodoEvent.getCompleted() = _GetCompleted;
-  const factory TodoEvent.getPinned() = _GetPinned;
-  const factory TodoEvent.getByPriority(Priority priority) = _GetByPriority;
-  const factory TodoEvent.getByCategory(String categoryId) = _GetByCategory;
-  const factory TodoEvent.search(String query) = _Search;
+  const factory TodoEvent.getCompleted() = GetCompleted;
+  const factory TodoEvent.getPinned() = GetPinned;
+  const factory TodoEvent.getByPriority(Priority priority) = GetByPriority;
+  const factory TodoEvent.getByCategory(String categoryId) = GetByCategory;
+  const factory TodoEvent.search(String query) = Search;
 
-  const factory TodoEvent.markCompleted(int id) = _MarkCompleted;
-  const factory TodoEvent.markPending(int id) = _MarkPending;
+  const factory TodoEvent.markCompleted(int id) = MarkCompleted;
+  const factory TodoEvent.markPending(int id) = MarkPending;
 
-  const factory TodoEvent.getStats() = _GetStats;
+  const factory TodoEvent.getStats() = GetStats;
 }

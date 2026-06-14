@@ -4,6 +4,7 @@ import 'package:todo_crud_app_sqlite/core/navigation/app_routes.dart';
 import 'package:todo_crud_app_sqlite/feature/note/note_list_page.dart';
 import 'package:todo_crud_app_sqlite/feature/settings/settings_page.dart';
 import 'package:todo_crud_app_sqlite/feature/tab/tab_page.dart';
+import 'package:todo_crud_app_sqlite/feature/todo/domain/entity/todo_entity.dart';
 import 'package:todo_crud_app_sqlite/feature/todo/presentation/todo_list_page.dart';
 
 import '../../feature/note/note_add_page.dart';
@@ -62,7 +63,10 @@ final appRouter = GoRouter(
     GoRoute(
       parentNavigatorKey: _rootNavigatorKey,
       path: AppRoutes.todoEditPage,
-      builder: (context, state) => const TodoEditPage(),
+      builder: (context, state) {
+        final todo = state.extra as TodoEntity;
+        return TodoEditPage(todo : todo);
+      },
     ),
     GoRoute(
       parentNavigatorKey: _rootNavigatorKey,

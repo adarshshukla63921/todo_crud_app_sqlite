@@ -18,6 +18,7 @@ import '../../feature/todo/domain/usecases/stats/get_overdue_count_use_case.dart
 import '../../feature/todo/domain/usecases/stats/get_pending_count_use_case.dart';
 import '../../feature/todo/domain/usecases/status/mark_completed_use_case.dart';
 import '../../feature/todo/domain/usecases/status/mark_pending_use_case.dart';
+import '../../feature/todo/presentation/bloc/todo_bloc.dart';
 import '../database/database_helper.dart';
 import 'injection.dart';
 
@@ -92,5 +93,27 @@ void initTodo() {
   );
   getIt.registerLazySingleton<GetPendingCountUseCase>(
     () => GetPendingCountUseCase(todoRepository: getIt<TodoRepository>()),
+  );
+
+  getIt.registerLazySingleton<TodoBloc>(
+    () => TodoBloc(
+      createTodoUseCase: getIt<CreateTodoUseCase>(),
+      markPendingUseCase: getIt<MarkPendingUseCase>(),
+      markCompletedUseCase: getIt<MarkCompletedUseCase>(),
+      getPendingCountUseCase: getIt<GetPendingCountUseCase>(),
+      getOverdueCountUseCase: getIt<GetOverdueCountUseCase>(),
+      getCompletionRateUseCase: getIt<GetCompletionRateUseCase>(),
+      getCompletedCountUseCase: getIt<GetCompletedCountUseCase>(),
+      searchTodoUseCase: getIt<SearchTodoUseCase>(),
+      getTodosByPriorityUseCase: getIt<GetTodosByPriorityUseCase>(),
+      getTodoByCategoryUseCase: getIt<GetTodoByCategoryUseCase>(),
+      getPinnedTodosUseCase: getIt<GetPinnedTodosUseCase>(),
+      getCompletedTodosUseCase: getIt<GetCompletedTodosUseCase>(),
+      updateTodoUseCase: getIt<UpdateTodoUseCase>(),
+      getTodoByIdUseCase: getIt<GetTodoByIdUseCase>(),
+      deleteAllTodosUseCase: getIt<DeleteAllTodosUseCase>(),
+      deleteTodoByIdUseCase: getIt<DeleteTodoByIdUseCase>(),
+      getAllTodosUseCase: getIt<GetAllTodosUseCase>(),
+    ),
   );
 }
