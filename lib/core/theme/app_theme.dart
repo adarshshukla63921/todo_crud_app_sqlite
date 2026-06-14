@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'app_colors.dart';
+import 'app_typography.dart';
 
 /// Centralized theme configurations for the application.
 /// Sets up global typography (Poppins) and builds detailed Light/Dark ThemeData.
@@ -11,6 +12,7 @@ abstract final class AppTheme {
       useMaterial3: true,
       fontFamily: _fontFamily,
       brightness: Brightness.light,
+      textTheme: AppTypography.poppins().toTextTheme(),
       colorScheme: const ColorScheme(
         brightness: Brightness.light,
         primary: AppColors.lightPrimary,
@@ -57,7 +59,10 @@ abstract final class AppTheme {
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
-          side: const BorderSide(color: AppColors.lightOutlineVariant, width: 1),
+          side: const BorderSide(
+            color: AppColors.lightOutlineVariant,
+            width: 1,
+          ),
         ),
       ),
     );
@@ -68,6 +73,7 @@ abstract final class AppTheme {
       useMaterial3: true,
       fontFamily: _fontFamily,
       brightness: Brightness.dark,
+      textTheme: AppTypography.poppins().toTextTheme(),
       colorScheme: const ColorScheme(
         brightness: Brightness.dark,
         primary: AppColors.darkPrimary,

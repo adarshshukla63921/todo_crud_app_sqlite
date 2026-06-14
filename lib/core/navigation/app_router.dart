@@ -5,11 +5,11 @@ import 'package:todo_crud_app_sqlite/feature/note/note_list_page.dart';
 import 'package:todo_crud_app_sqlite/feature/settings/settings_page.dart';
 import 'package:todo_crud_app_sqlite/feature/tab/tab_page.dart';
 import 'package:todo_crud_app_sqlite/feature/todo/domain/entity/todo_entity.dart';
-import 'package:todo_crud_app_sqlite/feature/todo/presentation/todo_list_page.dart';
+import 'package:todo_crud_app_sqlite/feature/todo/presentation/pages/todo_list_page.dart';
 
 import '../../feature/note/note_add_page.dart';
 import '../../feature/note/note_edit_page.dart';
-import '../../feature/todo/presentation/todo_add_page.dart';
+import '../../feature/todo/presentation/pages/todo_add_page.dart';
 import '../../feature/todo/presentation/todo_edit_page.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
@@ -65,7 +65,7 @@ final appRouter = GoRouter(
       path: AppRoutes.todoEditPage,
       builder: (context, state) {
         final todo = state.extra as TodoEntity;
-        return TodoEditPage(todo : todo);
+        return TodoEditPage(todo: todo);
       },
     ),
     GoRoute(

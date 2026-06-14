@@ -10,9 +10,12 @@ class TodoEditPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider.value(value: getIt<TodoBloc>(), child: Scaffold(
-      appBar: AppBar(title: Text('Edit Todo')),
-      body: Center(child: Text('You will edit todos here.')),
-    ),);
+    return BlocProvider.value(
+      value: getIt<TodoBloc>(),
+      child: Scaffold(
+        appBar: AppBar(title: Text('Edit Todo')),
+        body: Center(child: Text('You will edit todos here.')),
+      ),
+    );
   }
 }

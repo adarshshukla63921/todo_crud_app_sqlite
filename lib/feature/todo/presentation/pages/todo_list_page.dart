@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
-import 'package:todo_crud_app_sqlite/core/navigation/app_routes.dart';
+import 'package:todo_crud_app_sqlite/core/theme/app_radius.dart';
 import 'package:todo_crud_app_sqlite/feature/todo/presentation/bloc/todo_bloc.dart';
-import '../../../core/di/injection.dart';
-import '../../../core/widget/common_floating_action_button.dart';
-import 'bloc/todo_event.dart';
+import 'package:todo_crud_app_sqlite/feature/todo/presentation/pages/todo_add_page.dart';
+import '../../../../core/di/injection.dart';
+import '../../../../core/widget/common_floating_action_button.dart';
+import '../bloc/todo_event.dart';
 
 class TodoListPage extends StatelessWidget {
   const TodoListPage({super.key});
+
+  void _showSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      useSafeArea: true,
+      isScrollControlled: true,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadiusGeometry.circular(AppRadius.md),
+      ),
+      builder: (context) => TodoAddPage(),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +30,10 @@ class TodoListPage extends StatelessWidget {
         appBar: AppBar(title: Text('Todo')),
         floatingActionButton: CommonFloatingActionButton(
           onTap: () {
-            context.push(AppRoutes.todoAddPage);
+            _showSheet(context);
           },
           icon: Icons.add_circle_outlined,
+          label: 'Add Task',
         ),
         body: Center(child: Text('Todo will appear here')),
       ),

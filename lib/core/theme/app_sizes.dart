@@ -1,7 +1,7 @@
 /// Centralized sizes for icons, buttons, cards, and other UI component dimensions.
 abstract final class AppSizes {
   // --- Icon Sizes ---
-  
+
   /// Extra small icons: 16.0
   static const double iconXs = 16.0;
 
