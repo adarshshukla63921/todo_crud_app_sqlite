@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_crud_app_sqlite/core/di/injection.dart';
 import 'package:todo_crud_app_sqlite/core/theme/app_spacing.dart';
 import 'package:todo_crud_app_sqlite/core/theme/app_typography.dart';
+import 'package:todo_crud_app_sqlite/core/widget/common_date_time_picker.dart';
 import 'package:todo_crud_app_sqlite/core/widget/common_list_switch_tile.dart';
 import 'package:todo_crud_app_sqlite/core/widget/common_text_field.dart';
 import 'package:todo_crud_app_sqlite/feature/todo/presentation/bloc/todo_bloc.dart';
@@ -23,6 +24,8 @@ class _TodoAddPageState extends State<TodoAddPage> {
   bool _isPinned = false;
   bool _hasReminder = false;
   Priority _selectedPriority = Priority.low;
+  DateTime? _reminderTime;
+  DateTime? _dueDate;
 
   @override
   void initState() {
@@ -67,7 +70,7 @@ class _TodoAddPageState extends State<TodoAddPage> {
             ),
             CommonListSwitchTile(
               title: 'Set Reminder',
-              subtitle: 'Get a notification when the task is due',
+              subtitle: 'Get a notification when for the task',
               icon: Icons.alarm,
               value: _hasReminder,
               onChanged: (val) {
@@ -76,6 +79,30 @@ class _TodoAddPageState extends State<TodoAddPage> {
                 });
               },
             ),
+            if(_hasReminder)
+              CommonDateTimePicker(
+                icon: Icons.calendar_today,
+                label: 'Reminder Time',
+                subtitle: 'Select date & time for reminder',
+                value: _reminderTime,
+                onChanged: (newVal) {
+                  setState(() {
+                    _reminderTime = newVal;
+                  });
+                },
+              ),
+            if(_hasReminder)
+              CommonDateTimePicker(
+                icon: Icons.event_available,
+                label: 'Due Date',
+                subtitle: 'Select date & time for finishing the task',
+                value: _dueDate,
+                onChanged: (newVal) {
+                  setState(() {
+                    _dueDate = newVal;
+                  });
+                },
+              ),
             CommonPrioritySelector(
               selectedPriority: _selectedPriority,
               onPrioritySelected: (priority) {

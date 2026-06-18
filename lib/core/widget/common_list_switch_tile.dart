@@ -33,6 +33,11 @@ class CommonListSwitchTile extends StatelessWidget {
     final iconColor = value ? effectiveActiveColor : colors.onSurfaceVariant;
 
     return Container(
+      constraints: const BoxConstraints(minHeight: 56.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.lg,
+        vertical: AppSpacing.sm,
+      ),
       decoration: BoxDecoration(
         color: colors.surfaceContainerHighest,
         borderRadius: BorderRadius.circular(AppRadius.md),
